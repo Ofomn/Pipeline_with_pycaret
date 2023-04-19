@@ -6,6 +6,17 @@
 The main goal of this dataset is to build a predictive model that can accurately predict whether a customer will subscribe to a term deposit or not, based on their historical data. This dataset is often used to showcase the various features and capabilities of PyCaret, including data preprocessing, model training and selection, hyperparameter tuning, and model interpretation.
 
 
+## Dataset
+The dataset used was imported from pycaret using the code below
+
+```bash python
+from pycaret.classification import *
+from pycaret.datasets import get_data
+dataset = get_data('bank')
+```
+------
+
+
 ## Creating a machine learning pipeline with Pycaret
 I will be exploring the following steps to achieve a ML_pipeline using pycaret:
 
@@ -163,15 +174,6 @@ To install Pycaret 3.0, run the following command:
 ```
 -------
 
-## Dataset
-The dataset used was imported from pycaret using the code below
-
-```bash python
-from pycaret.classification import *
-from pycaret.datasets import get_data
-dataset = get_data('bank')
-```
-------
 
  ## License 
  Licensed under GPL-3.0 license
