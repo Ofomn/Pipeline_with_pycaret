@@ -26,7 +26,7 @@ To be able to run this analysis, you will need the following:
 - Python 3.x
 
 
-## **Installation**
+## Installation
 To install Pycaret 3.0, run the following command:
 
 ```bash python
@@ -42,3 +42,10 @@ from pycaret.classification import *
 from pycaret.datasets import get_data
 dataset = get_data('bank')
 ```
+------
+
+ ## License 
+ Licensed under GPL-3.0 license
+
+
+© Ofomnbuk 2023 :kisses:
