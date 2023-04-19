@@ -20,24 +20,61 @@ import pandas as pd
 ```bash python
 #get dataset
 dataset = get_data('bank')
+
+#check the shape of data
+dataset.shape
 ```
 
 
 💡 Compare Models
 
+```bash python
+
+```
+
 💡 Create the Model
+
+```bash python
+
+```
 
 💡 Tune the Model
 
+```bash python
+
+```
+
 💡 Plot the Model
+
+
+```bash python
+
+```
 
 💡 Evaluate the model
 
+```bash python
+
+```
+
 💡 Finalize the Model
+
+```bash python
+
+```
 
 💡 Predict with the model
 
+```bash python
+
+```
+
 💡 Save/Load Model
+
+
+```bash python
+
+```
 
 
 
