@@ -1,4 +1,4 @@
-![bank](https://user-images.githubusercontent.com/122539866/232967311-8fcb775c-a732-44ce-9423-dff04ebd5e39.jpeg)
+![banks](https://user-images.githubusercontent.com/122539866/232967760-98fa0fc5-f832-4d6a-b0c4-95731bcfacf6.jpg)
 
 ----
 ## Introduction
