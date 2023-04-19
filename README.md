@@ -8,6 +8,7 @@ The main goal of this dataset is to build a predictive model that can accurately
 
 ## Creating a machine learning pipeline with Pycaret
 I will be exploring the following steps to achieve a ML_pipeline using pycaret:
+
 💡 Set up the environment, Get dataset and Check for nulls
 
 💡 Compare Models
@@ -60,6 +61,6 @@ dataset = get_data('bank')
  Licensed under GPL-3.0 license
 
 
-© Ofomnbuk 2023  :can 😘 🇳🇬
+© Ofomnbuk 2023  🇨🇦 😘 🇳🇬
 
 
