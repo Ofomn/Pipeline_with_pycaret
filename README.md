@@ -11,6 +11,18 @@ I will be exploring the following steps to achieve a ML_pipeline using pycaret:
 
 💡 Set up the environment, Get dataset and Check for nulls
 
+```bash python
+from pycaret.classification import *
+from pycaret.datasets import get_data
+import pandas as pd
+```
+
+```bash python
+#get dataset
+dataset = get_data('bank')
+```
+
+
 💡 Compare Models
 
 💡 Create the Model
