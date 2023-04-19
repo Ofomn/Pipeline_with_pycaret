@@ -32,3 +32,13 @@ To install Pycaret 3.0, run the following command:
 ```bash python
 !pip install pycaret[full]
 ```
+-------
+
+## Dataset
+The dataset used was imported from pycaret using the code below
+
+```bash python
+from pycaret.classification import *
+from pycaret.datasets import get_data
+dataset = get_data('bank')
+```
