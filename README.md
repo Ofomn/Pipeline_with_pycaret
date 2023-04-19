@@ -51,17 +51,34 @@ model_setup = setup(data=data, target='deposit', session_id=321)
 
 ```bash python
 
+#Compare Model
+best_model = compare_models()
+
+print(best_model)
+
 ```
 
 💡 Create the Model
 
 ```bash python
 
+models()
+
+gbc = create_model('gbc')
+
+#trained model object is stored in the variable 'gbc'. 
+print(gbc)
+
 ```
 
 💡 Tune the Model
 
 ```bash python
+
+# Accuracy in previous model is 0.9056 and in the tuned model accuracy is 0.9065
+tuned_gbc = tune_model(gbc)
+
+print(tuned_gbc)
 
 ```
 
@@ -70,11 +87,21 @@ model_setup = setup(data=data, target='deposit', session_id=321)
 
 ```bash python
 
+## AUC Plot
+plot_model(tuned_gbc, plot = 'auc')
+
+
+## Consufion matrix
+plot_model(tuned_gbc, plot = 'confusion_matrix')
+
 ```
 
 💡 Evaluate the model
 
 ```bash python
+
+## model performance is to use the evaluate_model()
+evaluate_model(tuned_gbc)
 
 ```
 
@@ -82,11 +109,22 @@ model_setup = setup(data=data, target='deposit', session_id=321)
 
 ```bash python
 
+final_gbc = finalize_model(tuned_gbc)
+final_gbc
+
+#Final gbc parameters for deployment
+print(final_gbc)
+
 ```
 
 💡 Predict with the model
 
 ```bash python
+
+predict_model(final_gbc)
+
+unseen_predictions = predict_model(final_gbc, data=data_unseen)
+unseen_predictions.head()
 
 ```
 
@@ -94,6 +132,14 @@ model_setup = setup(data=data, target='deposit', session_id=321)
 
 
 ```bash python
+
+save_model(final_gbc, './Pycaret/Final_gbc')
+
+saved_final_gbc = load_model('./Pycaret/Final_gbc')
+
+new_prediction = predict_model(saved_final_gbc, data=data_unseen)
+
+new_prediction.head()
 
 ```
 
