@@ -174,6 +174,8 @@ To install Pycaret 3.0, run the following command:
 ```
 -------
 
+[Click To View My Notebook](https://nbviewer.org./github/Ofomn/Stacked-Histogram/blob/f0c4b6ca83b55013f89ab65095202aa4e0899920/DataViz.ipynb)
+
 
  ## License 
  Licensed under GPL-3.0 license
