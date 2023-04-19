@@ -23,6 +23,27 @@ dataset = get_data('bank')
 
 #check the shape of data
 dataset.shape
+
+dataset.isna().sum()
+
+
+## sample returns a random sample from an axis of the object. That would be 38,429 samples, not 45211
+data = dataset.sample(frac=0.85, random_state=456)
+
+data
+
+# remove from the original dataset this random data
+data_unseen = dataset.drop(data.index)
+data_unseen
+
+# Reseting the index of both datasets
+data.reset_index(inplace=True, drop=True)
+data_unseen.reset_index(inplace=True, drop=True)
+print('Data for Modeling: ' + str(data.shape))
+print('Unseen Data For Predictions: ' + str(data_unseen.shape))
+
+model_setup = setup(data=data, target='deposit', session_id=321)
+
 ```
 
 
