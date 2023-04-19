@@ -61,6 +61,6 @@ dataset = get_data('bank')
  Licensed under GPL-3.0 license
 
 
-© Ofomnbuk 2023  🇨🇦 😘 🇳🇬
+© Ofomnbuk 2023 🇨🇦
 
 
